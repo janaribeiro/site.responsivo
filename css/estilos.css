@@ -1,0 +1,147 @@
+/*reset do css */ 
+  * {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;  /* ver videos da Vanessa Tonini faland sobre box-sizing */
+  }
+
+  body {
+    background-image:url('https://analyticsindiamag.com/wp-content/uploads/2019/05/learning-rate.gif');
+    background-size: 200vh;
+    height:100vh;
+    font-family:cursive;
+    
+    
+  }
+  /* se a tela tiver pelo menos 400px vai carregar esses estilos */
+  @media (min-width: 400px) {
+    body { 
+      font-size:14px;
+
+    }
+
+  /*brackpoints*/
+  }
+
+  @media (min-width: 700px) {
+    body {
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    body {
+      font-size: 22px;
+    }
+  }
+
+
+
+  header {
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .menu {
+    background-color:gray;
+    position: fixed;
+    width: 100vw;
+    top:0;
+  }
+  
+  .menu li {
+    list-style:none;
+  }
+  
+  .menu ul {
+    display:flex; 
+    justify-content:space-around;
+  }
+  
+  a {
+    color:white;
+    text-decoration:none;
+  }
+  
+  a:hover {
+    text-decoration:underline;
+  }
+  
+  
+  .site-title {
+    text-align: center;
+    color:white;
+    font-size: 3em;
+   
+    
+  }
+  
+  .site-subtitle {
+    font-style: italic;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 2em;
+    color:white;
+  }
+  .img-portfolio {
+  height: 180px;
+  width: 180px;
+  
+ 
+  }
+
+  .menu a {
+  color:white;
+  display: block;
+  padding: 10px 10px;
+  text-decoration: none;
+  }
+
+  .portfolio {
+    background-image: url('https://img.freepik.com/fotos-gratis/plano-de-fundo-texturizado-preto_24972-764.jpg?size=626&ext=jpg');
+    background-size: 200vh;
+    text-align: center;
+    line-height: 3;
+}
+
+.portfolio .imagens {
+    display: grid;
+    gap: 3.5em;
+}
+
+@media (min-width: 540px) {
+    .portfolio .imagens {
+        grid-template-columns: 230px 230px;
+        align-content: center;
+        justify-content: center;
+        padding: 20px;
+    }
+}
+
+.portfolio h2 {
+    font-size: 35px;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.imagens .img-portfolio {
+    height: 135px;
+    margin-top: 50px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.imagens .img-portfolio:hover {
+    transform: scale(1.1);
+    transition: 0.6s;
+}
+
+.imagens figcaption {
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: bold;
+    color:white;
+}
