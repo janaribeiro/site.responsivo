@@ -1,2 +1,2 @@
 # site.responsivo
-Site responsivo utilizando html e css
+Site responsivo utilizando html, CSS reset, media queries e position
